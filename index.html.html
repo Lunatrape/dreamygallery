@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lunatrap's Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #ffe6f0, #f7f0ff);
+      color: #6d4c70;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 50px 20px 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3em;
+      color: #d63384;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.1em;
+      color: #8c5c94;
+    }
+
+    .slider {
+      position: relative;
+      width: 90%;
+      max-width: 800px;
+      margin: 40px auto;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .slides {
+      display: flex;
+      width: 400%;
+      animation: slide 20s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0%); }
+      20% { transform: translateX(0%); }
+      25% { transform: translateX(-100%); }
+      45% { transform: translateX(-100%); }
+      50% { transform: translateX(-200%); }
+      70% { transform: translateX(-200%); }
+      75% { transform: translateX(-300%); }
+      95% { transform: translateX(-300%); }
+      100% { transform: translateX(0%); }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      padding: 30px;
+      font-size: 14px;
+      color: #9e5c8f;
+      animation: fadeIn 2s ease-in-out 1.5s forwards;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lunatrap’s Dreamy World</h1>
+    <div class="subtitle">soft girls, dreamy lights & magical pinks ✨</div>
+  </header>
+
+  <div class="slider">
+    <div class="slides">
+      <img src="https://i.pinimg.com/564x/59/64/f4/5964f4309847f84a14b5a7ec5efbd8d6.jpg" alt="Girl 1">
+      <img src="https://i.pinimg.com/564x/38/01/9f/38019f6257a1c2e92e5cc6d5e4bc6c61.jpg" alt="Girl 2">
+      <img src="https://i.pinimg.com/564x/b4/f8/b2/b4f8b25e212f5481680e7cb8e39cbbed.jpg" alt="Girl 3">
+      <img src="https://i.pinimg.com/564x/17/06/1f/17061f6e9c92f35078d1e3de18fa07d2.jpg" alt="Girl 4">
+    </div>
+  </div>
+
+  <footer>
+    Made with love by Lunatrap 💖
+  </footer>
+
+</body>
+</html>
